@@ -34,10 +34,10 @@ export default function Card(props) {
                 ))}
             </div>
 
-            <div className="flex items-center space-x-1">
+            <div className="flex items-center space-x-2">
                 {tech.slice(0, 4).map((e, index) => (
                     <span key={index} className="">
-                        <Image src={e.logoSm} alt="tech logo" width={40} height={30} layout="fixed" />
+                        <Image src={e.logoSm} alt="tech logo" width={35} height={30} layout="fixed" />
                     </span>
                 ))}
             </div>

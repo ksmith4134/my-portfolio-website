@@ -67,4 +67,26 @@ export const myProjects = [
             {name: "Tailwind", logoSm:"/logos/tailwind.svg", logoLg: "", end:"frontend"},
         ]
     },
+    {
+        id: 3, 
+        entity: "Pasture Stand", 
+        entityLogo: "/logos/pasturestand-logo.png", 
+        projectTitle: "Multi-vendor e-commerce farmers market", 
+        type: "website",
+        skills: [
+            {label: "Copy"},
+            {label: "Design"},
+            {label: "Programming"},
+        ],
+        website: "https://www.pasturestand.com",
+        wireframeLink: "",
+        shortDescription: "An online farmers market that makes it convenient for consumers to buy products directly from local farms within a 30 mile radius of their home. The platform facilitates both farm-to-consumer and farm-to-farm sales.", 
+        longDescription: "",
+        releaseDate: "2020-02-01",
+        techUsed: [
+            {name: "WordPress", logoSm:"/logos/wordpress-logo.png", logoLg: "", end:"frontend"},
+            {name: "MySQL", logoSm:"/logos/mysql-logo.svg", logoLg: "", end:"backend"},
+            {name: "PHP", logoSm:"/logos/php-logo-new.svg", logoLg: "", end:"backend"}
+        ]
+    },
   ]
