@@ -38,9 +38,9 @@ export default function NavBar() {
                         </div>
                     </div>
 
-                    <button class="rounded-full p-1 bg-gradient-to-r from-indigo-500 via-sky-500 to-teal-400 text-lg hover:shadow-teal-500/10 hover:shadow-lg">
+                    <button className="rounded-full p-1 bg-gradient-to-r from-indigo-500 via-sky-500 to-teal-400 text-lg">
                         <Link href="mailto:ksmith4134@gmail.com">
-                            <a class="px-8 py-2 block rounded-full bg-white text-indigo-500 hover:text-teal-500 font-bold">Contact</a>
+                            <a className="px-8 py-2 block rounded-full bg-white hover:bg-transparent text-indigo-500 hover:text-white font-bold">Contact</a>
                         </Link>
                     </button>
 
@@ -49,12 +49,8 @@ export default function NavBar() {
                 <div className="flex justify-between items-center mt-20">
                     <div className="flex space-x-6 items-center">
                         {nav.map(page => (
-                            <div 
-                                key={page.id} 
-                                onClick={() => handleClick(page.id, page.href)} 
-                                className={`px-8 py-3 ${page.id === selected ? 'bg-gradient-to-r from-slate-700 via-slate-900 to-indigo-900 text-white' : 'text-slate-800 bg-slate-200 hover:bg-slate-300'} rounded-full hover:cursor-pointer flex items-center`}
-                            >
-                                <span class="inline-flex space-x-4 items-center">
+                            <div key={page.id} onClick={() => handleClick(page.id, page.href)} className={`px-8 py-3 ${page.id === selected ? 'bg-gradient-to-r from-slate-700 via-slate-900 to-indigo-900 text-white' : 'text-slate-800 bg-slate-200 hover:bg-slate-300'} rounded-full hover:cursor-pointer flex items-center`}>
+                                <span className="inline-flex space-x-4 items-center">
                                     <FontAwesomeIcon icon={page.icon} className="text-xl" />
                                     <span className="text-base">{page.label}</span>
                                 </span>

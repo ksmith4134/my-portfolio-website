@@ -2,6 +2,6 @@
 
 export default function about() {
   return (
-    <div>about</div>
+    <div>Learn more about me...</div>
   )
 }
