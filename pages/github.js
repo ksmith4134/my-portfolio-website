@@ -51,7 +51,7 @@ export default function Github() {
                         </div>
                         <div>
                             <h1 className="font-semibold text-xl">Public Repos</h1>
-                            <a href={user.html_url} target="_blank" rel="noreferrer" className="text-sky-500 hover:underline hover:underline-offset-4">See my code</a>
+                            <a href={user.html_url} target="_blank" rel="noreferrer" className="text-sky-500 hover:underline hover:underline-offset-4">See my repos</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ export default function Github() {
                 {repos.map((repo, index) => (
                     <div key={index} className="bg-white border-[1px] border-slate-200 rounded-lg p-6 hover:shadow-xl hover:shadow-slate-400/10 hover:cursor-pointer">
                         <p className="font-semibold">{repo.name}</p>
-                        <a href={repo.html_url} target="_blank" rel="noreferrer" className="text-sky-500 text-sm hover:underline hover:underline-offset-4">{repo.html_url}</a>
+                        <a href={repo.html_url} target="_blank" rel="noreferrer" className="text-sky-500 text-sm hover:underline hover:underline-offset-4">See my code</a>
                         <div className="mt-4 text-base">{repo.description}</div>
                         <div className="w-fit mt-6 text-xs rounded-full bg-indigo-900 text-white px-4 py-2">
                             {repo.language}
