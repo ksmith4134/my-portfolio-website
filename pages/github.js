@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import Card from "../components/widgets/Card";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Github() {
     
@@ -36,18 +37,21 @@ export default function Github() {
         <div>
             <div className="px-8">
                 <div className="flex flex-wrap justify-between items-center">
-                    <div className=" mt-8">
-                        <h1 className="font-semibold text-xl">{user.name}</h1>
-                        <div className="">Joined {joinDate}</div>
+                    <div className="mt-8 pr-8 inline-flex items-center">
+                        <FontAwesomeIcon icon={faGithub} className="text-slate-800 text-5xl sm:text-6xl pr-4" />
+                        <div>
+                            <h1 className="font-semibold text-xl">{user.name}</h1>
+                            <div className="">{joinDate}</div>
+                        </div>
                     </div>
                     <div className="inline-flex items-center space-x-4 mt-8">
 
-                        <div className="relative rounded-full w-20 h-20 bg-gradient-to-br from-teal-300 via-sky-400 to-indigo-500">
-                            <span className="absolute w-16 h-16 bottom-2 left-2 flex justify-center items-center rounded-full bg-white text-sky-500 text-4xl">{repos.length}</span>
+                        <div className="relative rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gradient-to-br from-teal-300 via-sky-400 to-indigo-500">
+                            <span className="absolute w-10 h-10 sm:w-16 sm:h-16 bottom-1 left-1 sm:bottom-2 sm:left-2 flex justify-center items-center rounded-full bg-white text-sky-500 text-2xl sm:text-4xl">{repos.length}</span>
                         </div>
                         <div>
                             <h1 className="font-semibold text-xl">Public Repos</h1>
-                            <a href={user.html_url} target="_blank" rel="noreferrer" className="text-sky-500 hover:underline hover:underline-offset-4">{user.html_url}</a>
+                            <a href={user.html_url} target="_blank" rel="noreferrer" className="text-sky-500 hover:underline hover:underline-offset-4">See my code</a>
                         </div>
                     </div>
                 </div>

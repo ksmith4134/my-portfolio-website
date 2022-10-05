@@ -38,18 +38,18 @@ export default function NavBar() {
         <nav>
             <div className="pt-6">
                 
-                <div className="flex justify-between items-center">
-                    <div className="flex items-center space-x-4">
+                <div className="sm:flex sm:items-center space-x-4">
+                    
                         <Link href="/">
                             <a>
-                                <Image src={me} className="rounded-full w-32 h-32 shadow-lg shadow-gray-300" alt="profile picture" priority="true" />
+                                <Image src={me} className="mx-auto rounded-full w-32 h-32 shadow-lg shadow-gray-300" alt="profile picture" priority="true" />
                             </a>
                         </Link>
-                        <div>
+                        <div className="mt-8 sm:mt-0 text-center sm:text-left">
                             <h1 className="font-bold text-4xl">Kevin Smith</h1>
                             <h2 className="mt-2 text-xl md:text-2xl">Web Developer, UI/UX Designer</h2>
                         </div>
-                    </div>
+                    
                 </div>
 
                 <div className="mt-16">
