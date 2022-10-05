@@ -42,7 +42,7 @@ export default function NavBar() {
                     <div className="flex items-center space-x-4">
                         <Link href="/">
                             <a>
-                                <Image src={me} className="block rounded-full w-32 h-32 shadow-lg shadow-gray-300" alt="profile picture" priority="true" />
+                                <Image src={me} className="rounded-full w-32 h-32 shadow-lg shadow-gray-300" alt="profile picture" priority="true" />
                             </a>
                         </Link>
                         <div>
