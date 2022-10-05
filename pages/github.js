@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Github() {
@@ -59,9 +60,11 @@ export default function Github() {
             </div>
             <div className="grid grid-cols-1 gap-8 mt-12">
                 {repos.map((repo, index) => (
-                    <div key={index} className="bg-white border-[1px] border-slate-200 rounded-lg p-6 hover:shadow-xl hover:shadow-slate-400/10 hover:cursor-pointer">
-                        <p className="font-semibold">{repo.name}</p>
-                        <a href={repo.html_url} target="_blank" rel="noreferrer" className="text-sky-500 text-sm hover:underline hover:underline-offset-4">See my code</a>
+                    <div key={index} className="bg-white border-[1px] border-slate-200 rounded-lg p-6 hover:shadow-xl hover:shadow-slate-400/10">
+                        <div className="flex justify-between items-center">
+                            <p className="font-semibold">{repo.name}</p>
+                            <a href={repo.html_url} target="_blank" rel="noreferrer" className="text-sky-500 text-sm hover:underline hover:underline-offset-4"><FontAwesomeIcon icon={faExternalLink} className="text-lg" /></a>
+                        </div>
                         <div className="mt-4 text-base">{repo.description}</div>
                         <div className="w-fit mt-6 text-xs rounded-full bg-indigo-900 text-white px-4 py-2">
                             {repo.language}

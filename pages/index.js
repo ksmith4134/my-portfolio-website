@@ -20,7 +20,7 @@ export default function Home(props) {
             <main>
                 <div className="grid grid-cols-1 gap-10 mt-12">
                     {projectList.map(project => (
-                        <Card key={project.id} entity={project.entity} title={project.title} type={project.type} skills={project.skills} summary={project.summary} released={project.used} tech={project.tech} logo={project.logo} />
+                        <Card key={project.id} entity={project.entity} title={project.title} type={project.type} skills={project.skills} website={project.website} wireframe={project.wireframe} summary={project.summary} released={project.used} tech={project.tech} logo={project.logo} />
                     ))}
                 </div>
             </main>
@@ -39,6 +39,7 @@ export async function getStaticProps () {
             type: project.type,
             skills: project.skills,
             website: project.website,
+            wireframe:project.wireframeLink,
             designLink: project.wireframeLink,
             summary: project.shortDescription,
             description: project.longDescription,

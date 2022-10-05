@@ -1,15 +1,11 @@
 import Image from "next/image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Card(props) {
 
     const { 
-        entity,
-        logo,
-        title,
-        type,
-        skills,
-        summary,
-        tech 
+        entity, logo, title, type, skills, website, wireframe, summary, tech 
     } = props
 
   return (
@@ -37,6 +33,30 @@ export default function Card(props) {
         { summary && (
             <div className="mt-6 text-base">{summary}</div>
         )}
+
+        <div className="flex flex-wrap gap-4 mt-4 text-xs">
+            { website && (
+                <div className="">
+                    <a href={website} target="_blank" rel="noreferrer" className="text-sky-500">
+                        <div className="flex space-x-2 items-center">
+                            <p>Visit website</p>
+                            <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+                        </div>
+                    </a>
+                </div>
+            )}
+            { wireframe && (
+                <div className="">
+                    <a href={wireframe} target="_blank" rel="noreferrer" className="text-sky-500">
+                        <div className="flex space-x-2 items-center">
+                            <p>Design Wireframes</p>
+                            <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
+                        </div>
+                    </a>
+                </div>
+            )}
+        </div>
+        
 
         <div className="flex flex-wrap lg:flex-nowrap justify-between items-center mt-4">
 
