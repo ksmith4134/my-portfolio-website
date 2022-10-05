@@ -18,7 +18,7 @@ export default function Home(props) {
             </Head>
 
             <main>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 gap-10 mt-12">
                     {projectList.map(project => (
                         <Card key={project.id} entity={project.entity} title={project.title} type={project.type} skills={project.skills} summary={project.summary} released={project.used} tech={project.tech} logo={project.logo} />
                     ))}

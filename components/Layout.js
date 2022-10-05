@@ -4,14 +4,17 @@ import NavBar from './nav/NavBar'
 export default function Layout({ children }) {
 
   return (
-    <div className="max-w-7xl mx-auto px-8 py-10 font-opensans">
+    <div className="bg-slate-100 min-h-screen">
 
-        <NavBar />
+        <div className="max-w-3xl mx-auto px-8 py-10 font-opensans">
 
-        <main className="mt-16">
-            {children}
-        </main>
+            <NavBar />
 
+            <main>
+                {children}
+            </main>
+
+        </div>
     </div>
   )
 }

@@ -4,9 +4,9 @@ export const myProjects = [
         entity: "NYS Education Department", 
         entityLogo: "/logos/dlm-logo.png", 
         projectTitle: "Teacher training & certification", 
-        type: "app",
+        type: "web app",
         skills: [
-            {label: "Design"},
+            {label: "UI/UX Design"},
             {label: "Programming"},
         ],
         website: "https://www.dlmnysaatraining.com/",
@@ -15,10 +15,10 @@ export const myProjects = [
         longDescription: "",
         releaseDate: "2022-10-04",
         techUsed: [
-            {name: "Strapi", logoSm:"/logos/strapi_logo.svg", logoLg: "", end:"backend"},
+            {name: "Tailwind", logoSm:"/logos/tailwind.svg", logoLg: "", end:"frontend"},
             {name: "React", logoSm:"/logos/react.svg", logoLg: "", end:"frontend"},
             {name: "NextJS", logoSm:"/logos/nextjs-icon-light.svg", logoLg: "", end:"frontend"},
-            {name: "Tailwind", logoSm:"/logos/tailwind.svg", logoLg: "", end:"frontend"},
+            {name: "Strapi", logoSm:"/logos/strapi_logo.svg", logoLg: "", end:"backend"},
         ]
     },
     {
@@ -29,29 +29,28 @@ export const myProjects = [
         type: "website",
         skills: [
             {label: "Copy"},
-            {label: "Design"},
+            {label: "UI/UX Design"},
             {label: "Programming"},
         ],
         website: "https://www.dovecopack.com/",
         wireframeLink: "",
-        shortDescription: "An informative branding website for Calvary's contract cannabis flower packaging division.",
+        shortDescription: "An informative branding website for Calvary's cannabis-automation division that offers contract flower packaging, labeling, secure warehousing, and shipping services.",
         longDescription: "",
         releaseDate: "2022-09-15",
         techUsed: [
-            {name: "Strapi", logoSm:"/logos/strapi_logo.svg", logoLg: "", end:"backend"},
+            {name: "Tailwind", logoSm:"/logos/tailwind.svg", logoLg: "", end:"frontend"},
             {name: "React", logoSm:"/logos/react.svg", logoLg: "", end:"frontend"},
             {name: "NextJS", logoSm:"/logos/nextjs-icon-light.svg", logoLg: "", end:"frontend"},
-            {name: "Tailwind", logoSm:"/logos/tailwind.svg", logoLg: "", end:"frontend"},
         ]
     },
     {
         id: 2, 
         entity: "Personal Project", 
         entityLogo: "", 
-        projectTitle: "CRM", 
-        type: "app",
+        projectTitle: "CRM, Sales Manager", 
+        type: "web app",
         skills: [
-            {label: "Design"},
+            {label: "UI/UX Design"},
             {label: "Programming"},
         ],
         website: "",
@@ -62,8 +61,8 @@ export const myProjects = [
         techUsed: [
             {name: "React", logoSm:"/logos/react.svg", logoLg: "", end:"frontend"},
             {name: "NextJS", logoSm:"/logos/nextjs-icon-light.svg", logoLg: "", end:"frontend"},
-            {name: "MySQL", logoSm:"/logos/mysql-logo.svg", logoLg: "", end:"backend"},
             {name: "PHP", logoSm:"/logos/php-logo-new.svg", logoLg: "", end:"backend"},
+            {name: "MySQL", logoSm:"/logos/mysql-logo.svg", logoLg: "", end:"backend"},
             {name: "Tailwind", logoSm:"/logos/tailwind.svg", logoLg: "", end:"frontend"},
         ]
     },
@@ -71,22 +70,22 @@ export const myProjects = [
         id: 3, 
         entity: "Pasture Stand", 
         entityLogo: "/logos/pasturestand-logo.png", 
-        projectTitle: "Multi-vendor e-commerce farmers market", 
+        projectTitle: "E-commerce farmers market", 
         type: "website",
         skills: [
             {label: "Copy"},
-            {label: "Design"},
+            {label: "UI/UX Design"},
             {label: "Programming"},
         ],
         website: "https://www.pasturestand.com",
         wireframeLink: "",
-        shortDescription: "An online farmers market that makes it convenient for consumers to buy products directly from local farms within a 30 mile radius of their home. The platform facilitates both farm-to-consumer and farm-to-farm sales.", 
+        shortDescription: "An online farmers market that makes it convenient to buy products directly from local farms within a 30 mile radius of your home. The site facilitates farm-to-consumer and farm-to-farm sales.",
         longDescription: "",
         releaseDate: "2020-02-01",
         techUsed: [
-            {name: "WordPress", logoSm:"/logos/wordpress-logo.png", logoLg: "", end:"frontend"},
             {name: "MySQL", logoSm:"/logos/mysql-logo.svg", logoLg: "", end:"backend"},
-            {name: "PHP", logoSm:"/logos/php-logo-new.svg", logoLg: "", end:"backend"}
+            {name: "PHP", logoSm:"/logos/php-logo-new.svg", logoLg: "", end:"backend"},
+            {name: "WordPress", logoSm:"/logos/wordpress-logo.png", logoLg: "", end:"frontend"}
         ]
     },
   ]
