@@ -9,7 +9,7 @@ export default function Card(props) {
     } = props
 
   return (
-    <div className="bg-white border-[1px] border-slate-200 rounded-lg px-6 pb-6 pt-2 hover:shadow-xl hover:shadow-slate-400/10 hover:cursor-pointer">
+    <div className="bg-white border-[1px] border-slate-200 rounded-lg px-6 pb-6 pt-2 hover:shadow-xl hover:shadow-slate-400/10">
 
         <div className="flex flex-wrap justify-between items-center">
             <div className="flex items-center sm:space-x-4 mt-4">
@@ -36,8 +36,8 @@ export default function Card(props) {
 
         <div className="flex flex-wrap gap-4 mt-4 text-xs">
             { website && (
-                <div className="">
-                    <a href={website} target="_blank" rel="noreferrer" className="text-sky-500">
+                <div className="w-24">
+                    <a href={website} target="_blank" rel="noreferrer" className="text-sky-500 hover:font-bold">
                         <div className="flex space-x-2 items-center">
                             <p>Visit website</p>
                             <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
@@ -46,8 +46,8 @@ export default function Card(props) {
                 </div>
             )}
             { wireframe && (
-                <div className="">
-                    <a href={wireframe} target="_blank" rel="noreferrer" className="text-sky-500">
+                <div className="w-36">
+                    <a href={wireframe} target="_blank" rel="noreferrer" className="text-sky-500 hover:font-bold">
                         <div className="flex space-x-2 items-center">
                             <p>Design Wireframes</p>
                             <FontAwesomeIcon icon={faArrowRight} className="text-xs" />
@@ -69,7 +69,7 @@ export default function Card(props) {
             </div>
 
             <div className="flex items-center gap-2 mt-4">
-                {tech?.slice(0, 3).map((e, index) => (
+                {tech?.slice(0, 4).map((e, index) => (
                     <span key={index} className="">
                         <Image src={e.logoSm} alt="tech logo" width={35} height={30} layout="fixed" />
                     </span>
