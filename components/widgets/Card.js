@@ -5,11 +5,11 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 export default function Card(props) {
 
     const { 
-        entity, logo, title, type, skills, website, wireframe, summary, tech 
+        id, entity, logo, title, type, skills, website, wireframe, summary, tech, showProject 
     } = props
 
   return (
-    <div className="mt-4 bg-white dark:bg-zinc-800 border-[2px] border-slate-200 dark:border-none rounded-xl px-6 pb-6 pt-2 hover:shadow-xl hover:shadow-slate-400/10 dark:shadow-none">
+    <div onClick={() => showProject(id)} className="mt-4 bg-white dark:bg-neutral-800 border-[2px] border-slate-200 dark:border-none rounded-xl px-6 pb-6 pt-2 hover:shadow-xl hover:shadow-slate-400/10 dark:shadow-none hover:cursor-pointer">
 
         <div className="flex flex-wrap justify-between items-center">
             <div className="flex sm:space-x-4 mt-4">

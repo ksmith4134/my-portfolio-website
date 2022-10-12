@@ -1,7 +1,6 @@
 import Header from './nav/Header'
 import { useState } from 'react'
 import Nav from './nav/Nav'
-import Nav2 from './nav/Nav2'
 
 export default function Layout({ children }) {
 
