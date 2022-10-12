@@ -9,13 +9,13 @@ export default function Layout({ children }) {
     return (
         <div className={`${darkMode === true ? 'dark' : ''}`}>
 
-            <div className="min-h-screen bg-slate-100 dark:bg-neutral-900 dark:text-slate-100 py-16">
+            <div className="min-h-screen bg-white dark:bg-neutral-900 dark:text-slate-100 py-16">
             
                 <div className="max-w-4xl mx-auto px-8 font-opensans">
 
                     <Header />
 
-                    <div className="pb-6 top-0 z-10 bg-slate-100 dark:bg-neutral-900">
+                    <div className="pb-6 top-0 z-10 bg-white dark:bg-neutral-900">
                         <Nav darkModeClick={() => setDarkMode(!darkMode)} darkMode={darkMode} />
                     </div>
 

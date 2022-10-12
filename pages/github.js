@@ -58,7 +58,7 @@ export default function Github() {
                 </div>
                 
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 pb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 mt-12 pb-12">
                 {repos.map((repo, index) => (
                     <div key={index} className="bg-white dark:bg-slate-800 border-[1px] border-slate-200 dark:border-slate-600 rounded-lg p-6 hover:shadow-xl hover:shadow-slate-400/10 dark:shadow-none">
                         <div className="flex justify-between items-center">

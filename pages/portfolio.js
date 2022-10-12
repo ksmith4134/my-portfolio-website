@@ -1,10 +1,9 @@
-import Head from "next/head";
 import Card2 from "../components/widgets/Card2";
 import { useState } from "react";
 import ProjectDrawer from "../components/drawers/ProjectDrawer";
 import { myProjects } from "../data/data";
 
-export default function Home(props) {
+export default function Portfolio(props) {
 
     const { projectList } = props
 
@@ -23,19 +22,9 @@ export default function Home(props) {
         setProject(null)
     }
 
-
     return (
         <div>
-            <Head>
-                <title>KS Portfolio</title>
-                <meta
-                    name="description"
-                    content="web development and ui/ux design portfolio"
-                />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
-            <main className="relative">
+            <div className="relative">
                 { project && (
                     <ProjectDrawer closeDrawer={closeDrawer} project={project} />
                 )}
@@ -45,11 +34,10 @@ export default function Home(props) {
                         <Card2 key={project.id} id={project.id} entity={project.entity} title={project.title} summary={project.summary} logo={project.logo} tech={project.tech} showProject={openDrawer} />
                     ))}
                 </div>
-            </main>
+            </div>
         </div>
     )
 }
-
 
 export async function getStaticProps () {
 

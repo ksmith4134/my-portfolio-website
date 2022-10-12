@@ -48,7 +48,7 @@ export const myProjects = [
     {
         id: 1, 
         entity: "Calvary Robotics", 
-        entityLogo: "/logos/calvary-logo.png", 
+        entityLogo: "/logos/calvary-logo-no-shadow.png", 
         projectTitle: "Dove Co-Pack", 
         type: "website",
         skills: [
