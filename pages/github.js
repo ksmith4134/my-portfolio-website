@@ -36,16 +36,16 @@ export default function Github() {
 
     return (
         <div>
-            <div className="px-8">
-                <div className="flex flex-wrap justify-between items-center">
-                    <div className="mt-8 pr-8 inline-flex items-center">
-                        <FontAwesomeIcon icon={faGithub} className="text-slate-800 text-5xl sm:text-6xl pr-4" />
+            <div className="">
+                <div className="grid grid-cols-1 sm:grid-cols-2">
+                    <div className="mt-8 inline-flex items-center px-8">
+                        <FontAwesomeIcon icon={faGithub} className="text-slate-800 dark:text-slate-50 text-5xl sm:text-7xl pr-4" />
                         <div>
                             <h1 className="font-semibold text-xl">{user.name}</h1>
                             <div className="">{joinDate}</div>
                         </div>
                     </div>
-                    <div className="inline-flex items-center space-x-4 mt-8">
+                    <div className="inline-flex items-center space-x-4 mt-8 px-8">
 
                         <div className="relative rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gradient-to-br from-teal-300 via-sky-400 to-indigo-500">
                             <span className="absolute w-10 h-10 sm:w-16 sm:h-16 bottom-1 left-1 sm:bottom-2 sm:left-2 flex justify-center items-center rounded-full bg-white text-sky-500 text-2xl sm:text-4xl">{repos.length}</span>
@@ -58,9 +58,9 @@ export default function Github() {
                 </div>
                 
             </div>
-            <div className="grid grid-cols-1 gap-8 mt-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 pb-12">
                 {repos.map((repo, index) => (
-                    <div key={index} className="bg-white border-[1px] border-slate-200 rounded-lg p-6 hover:shadow-xl hover:shadow-slate-400/10">
+                    <div key={index} className="bg-white dark:bg-slate-800 border-[1px] border-slate-200 dark:border-slate-600 rounded-lg p-6 hover:shadow-xl hover:shadow-slate-400/10 dark:shadow-none">
                         <div className="flex justify-between items-center">
                             <p className="font-semibold">{repo.name}</p>
                             <a href={repo.html_url} target="_blank" rel="noreferrer" className="text-sky-500 text-sm hover:underline hover:underline-offset-4"><FontAwesomeIcon icon={faExternalLink} className="text-lg" /></a>

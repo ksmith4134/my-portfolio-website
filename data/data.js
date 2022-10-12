@@ -1,3 +1,18 @@
+export const jamStack = [
+    {id: 0, label: "NEXT.js", description: "", logo: ""},
+    {id: 1, label: "React", description: "", logo: ""},
+    {id: 2, label: "Vue", description: "", logo: ""},
+    {id: 3, label: "JavaScript", description: "", logo: ""},
+    {id: 4, label: "HTML5", description: "", logo: ""},
+    {id: 5, label: "CSS3", description: "", logo: ""},
+    {id: 6, label: "Tailwind", description: "", logo: ""},
+    {id: 7, label: "NodeJS", description: "", logo: ""},
+    {id: 8, label: "PHP", description: "", logo: ""},
+    {id: 9, label: "MySQL", description: "", logo: ""},
+    {id: 10, label: "Strapi", description: "", logo: ""},
+    {id: 11, label: "WordPress", description: "", logo: ""},
+]
+
 export const myProjects = [
     {
         id: 0, 

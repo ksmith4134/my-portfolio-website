@@ -9,14 +9,14 @@ export default function Card(props) {
     } = props
 
   return (
-    <div className="bg-white border-[1px] border-slate-200 rounded-lg px-6 pb-6 pt-2 hover:shadow-xl hover:shadow-slate-400/10">
+    <div className="mt-4 bg-white dark:bg-zinc-800 border-[2px] border-slate-200 dark:border-none rounded-xl px-6 pb-6 pt-2 hover:shadow-xl hover:shadow-slate-400/10 dark:shadow-none">
 
         <div className="flex flex-wrap justify-between items-center">
-            <div className="flex items-center sm:space-x-4 mt-4">
+            <div className="flex sm:space-x-4 mt-4">
                 {logo && (
-                    <span className="hidden sm:block">
+                    <div className="hidden sm:block">
                         <Image src={logo} alt="project entity logo" width={50} height={50} layout="fixed" />
-                    </span>
+                    </div>
                 )}
                 <div>
                     <p className="text-lg font-semibold">{entity}</p>
@@ -31,7 +31,7 @@ export default function Card(props) {
         </div>
         
         { summary && (
-            <div className="mt-6 text-base">{summary}</div>
+            <div className="mt-6 text-sm">{summary}</div>
         )}
 
         <div className="flex flex-wrap gap-4 mt-4 text-xs">
@@ -62,7 +62,7 @@ export default function Card(props) {
 
             <div className="flex flex-wrap text-center items-center gap-2 mt-4">
                 {skills?.map((skill, index) => (
-                    <div key={index} className="text-xs px-4 py-2 bg-slate-300 rounded-full">
+                    <div key={index} className="text-xs px-4 py-2 bg-slate-300 dark:bg-slate-900 rounded-full">
                         {skill.label}
                     </div>
                 ))}

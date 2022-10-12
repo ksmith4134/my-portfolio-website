@@ -1,15 +1,28 @@
-import React from 'react'
+import { jamStack } from "../data/data"
 
-export default function stack() {
-  return (
-    <div className="mt-8 px-8">
-        <div className="font-bold text-lg">
-            My Jamstack
-        </div>
-        <div className="mt-6">
-            NEXT.js, React, Vue, JavaScript, HTML5, CSS3, Tailwind, NodeJS, PHP, MySQL, Strapi, WordPress
-        </div>
+export default function stack(props) {
 
-    </div>
-  )
+    const {jamStack} = props
+
+    return (
+        <div className="mt-16 px-8">
+            <div className="grid grid-cols-2 gap-8 font-bold">
+                {jamStack.map((item) => (
+                    <div key={item.id}>
+                        {item.label}
+                    </div>
+                ))}
+            </div>
+
+        </div>
+    )
+}
+
+export async function getStaticProps () {
+
+  return {
+    props: {
+        jamStack
+    }
+  }
 }
