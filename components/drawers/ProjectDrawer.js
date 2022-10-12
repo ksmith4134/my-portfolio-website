@@ -73,7 +73,7 @@ export default function ProjectDrawer(props) {
                         </div>
 
                         { project.note && (
-                            <div className="mt-6 text-xs italic max-w-sm text-red-200">
+                            <div className="mt-6 text-xs italic max-w-sm text-red-600 dark:text-red-200">
                                 * {project.note}
                             </div>
                         )}
