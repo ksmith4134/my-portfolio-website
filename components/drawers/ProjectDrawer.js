@@ -80,7 +80,7 @@ export default function ProjectDrawer(props) {
 
                         <p className="mt-12 text-xl font-bold">Tech Stack</p>
                         <div className="flex items-center space-x-6 mt-4">
-                            {project.tech?.slice(0, 4).map((e, index) => (
+                            {project.tech?.map((e, index) => (
                                 <span key={index} className="">
                                     <Image src={e.logoSm} alt="tech logo" width={35} height={30} layout="fixed" />
                                 </span>

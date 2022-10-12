@@ -42,6 +42,7 @@ export const myProjects = [
             {name: "React", logoSm:"/logos/react.svg", logoLg: "", end:"frontend"},
             {name: "Tailwind", logoSm:"/logos/tailwind.svg", logoLg: "", end:"frontend"},
             {name: "Strapi", logoSm:"/logos/strapi_logo.svg", logoLg: "", end:"backend"},
+            {name: "NodeJS", logoSm:"/logos/nodejs.svg", logoLg: "", end:"backend"},
         ]
     },
     {
