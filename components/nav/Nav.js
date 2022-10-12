@@ -42,7 +42,7 @@ export default function Nav(props) {
     return (
         <nav>
             <div className="flex sm:space-x-6 justify-center items-center flex-wrap sm:flex-nowrap">
-                <div onClick={() => viewNav(!showNav)} className="mt-8 w-full px-8 py-4 rounded-full bg-gradient-to-r from-slate-800 to-indigo-900 text-white text-center border-2 border-indigo-900 hover:cursor-pointer hover:shadow-lg hover:from-indigo-900 hover:to-indigo-900 order-2 sm:order-1">
+                <div onClick={() => viewNav(!showNav)} className="mt-8 w-full px-8 py-4 rounded-full bg-gradient-to-r from-slate-800 to-indigo-900 text-white text-center border-2 border-indigo-900 hover:cursor-pointer hover:shadow-lg hover:border-indigo-600 order-2 sm:order-1">
                     
                     <div className="flex justify-between items-center">
                         <div className="flex items-center space-x-4">
@@ -54,7 +54,7 @@ export default function Nav(props) {
 
                 </div>
 
-                <button onClick={handleDarkModeClick} className="relative mt-8 w-36 px-12 py-8 rounded-full bg-gradient-to-r from-slate-800 to-indigo-900 text-white text-center shadow-inner shadow-indigo-900 border-2 border-indigo-900 flex items-center order-1 sm:order-2">
+                <button onClick={handleDarkModeClick} className="relative mt-8 w-36 px-12 py-8 rounded-full bg-gradient-to-r from-slate-800 to-indigo-900 text-white text-center shadow-inner shadow-indigo-900 border-2 border-indigo-900 flex items-center order-1 sm:order-2 hover:border-indigo-600">
                     {darkMode ? 
                         <>
                             <div className="absolute top-1 right-1 bg-slate-900 rounded-full px-5 py-4 flex justify-center items-center">
@@ -75,7 +75,7 @@ export default function Nav(props) {
             { showNav && (
                 <div className="flex flex-wrap justify-between items-center gap-4 mt-4">
                     {nav.filter((item) => item.id != selected).map((link) => (
-                        <div key={link.id} onClick={() => handleNavClick(link.id, link.href)} className="w-40 flex flex-grow justify-center px-8 py-4 text-center rounded-full text-indigo-900 dark:text-white bg-indigo-100 hover:bg-indigo-200 hover:cursor-pointer dark:bg-indigo-900 hover:dark:bg-indigo-900/80">
+                        <div key={link.id} onClick={() => handleNavClick(link.id, link.href)} className="w-40 flex flex-grow justify-center px-8 py-4 text-center rounded-full text-indigo-900 dark:text-white bg-indigo-200 hover:bg-indigo-300 hover:cursor-pointer dark:bg-indigo-900 hover:dark:bg-indigo-900/60">
                             <div className="flex items-center space-x-4">
                                 <FontAwesomeIcon icon={link.icon} className="text-xl" />
                                 <div className="text-lg">{link.label}</div>
