@@ -48,7 +48,7 @@ export default function Github() {
                     <div className="inline-flex items-center space-x-4 mt-8 px-8">
 
                         <div className="relative rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gradient-to-br from-teal-300 via-sky-400 to-indigo-500">
-                            <span className="absolute w-10 h-10 sm:w-16 sm:h-16 bottom-1 left-1 sm:bottom-2 sm:left-2 flex justify-center items-center rounded-full bg-white text-sky-500 text-2xl sm:text-4xl">{repos.length}</span>
+                            <span className="absolute w-10 h-10 sm:w-16 sm:h-16 bottom-1 left-1 sm:bottom-2 sm:left-2 flex justify-center items-center rounded-full bg-white text-sky-500 text-2xl sm:text-4xl shadow-lg shadow-indigo-900/50">{repos.length}</span>
                         </div>
                         <div>
                             <h1 className="font-semibold text-xl">Public Repos</h1>

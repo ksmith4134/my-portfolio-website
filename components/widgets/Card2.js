@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 export default function Card2(props) {
 
     const { 
-        id, entity, logo, title, summary, showProject 
+        id, entity, logo, summary, showProject 
     } = props
 
   return (
@@ -20,9 +20,8 @@ export default function Card2(props) {
                 </div>
                 <div>
                     <p className="mt-4 text-lg font-semibold">{entity}</p>
-                    <div>{title}</div>
                     { summary && (
-                        <div className="mt-6 text-sm dark:text-neutral-400">{summary}</div>
+                        <div className="mt-3 text-sm dark:text-neutral-400">{summary}</div>
                     )}
                 </div>
 

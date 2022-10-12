@@ -26,7 +26,7 @@ export const myProjects = [
         ],
         website: "https://www.dlmnysaatraining.com/",
         wireframeLink: "https://xd.adobe.com/view/01568d2c-4590-4816-b830-46a41c167714-5405/",
-        shortDescription: "A curriculum of video-based training courses to help teachers learn how to conduct and record state assessments for students with severe cognitive disabilities.", 
+        shortDescription: "A curriculum of video-based courses and certification quizzes that help train teachers to conduct state assessments for students with severe cognitive disabilities.", 
         specialNote: "",
         contributions: [
             {id: 0, description: "Programmed the Authentication and Authorization system"},
@@ -46,10 +46,10 @@ export const myProjects = [
         ]
     },
     {
-        id: 1, 
-        entity: "Calvary Robotics", 
-        entityLogo: "/logos/calvary-logo-no-shadow.png", 
-        projectTitle: "Dove Co-Pack", 
+        id: 1,
+        entity: "Calvary Robotics",
+        entityLogo: "/logos/calvary-logo-no-shadow-sq.png",
+        projectTitle: "Dove Co-Pack",
         type: "website",
         skills: [
             {label: "Copy"},

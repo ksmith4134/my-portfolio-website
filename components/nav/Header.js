@@ -5,11 +5,11 @@ import me from '../../public/me.png'
 export default function Header() {
 
     return (
-        <div className="pb-8"> 
+        <div className="pb-6"> 
             <div className="sm:flex sm:items-center space-x-4"> 
                 <Link href="/">
                     <a>
-                        <Image src={me} className="mx-auto rounded-full w-28 h-28 shadow-lg shadow-gray-300 dark:shadow-none" alt="profile picture" priority="true" />
+                        <Image src={me} className="mx-auto rounded-full w-24 h-24 shadow-lg shadow-gray-300 dark:shadow-none" alt="profile picture" priority="true" />
                     </a>
                 </Link>
                 <div className="mt-8 sm:mt-0 text-center sm:text-left">

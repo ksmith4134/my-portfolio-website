@@ -18,11 +18,11 @@ export default function ProjectDrawer(props) {
 
     return (
         <div className="bg-gray-900 bg-opacity-90 fixed top-0 left-0 w-screen h-screen z-50 text-black">
-            <div className="absolute right-0 top-0 w-full max-w-screen-md bg-white dark:bg-neutral-900 dark:text-slate-50 h-full overflow-y-scroll">
+            <div className="absolute right-0 top-0 w-full max-w-screen-md bg-white dark:bg-neutral-900 dark:text-slate-200 h-full overflow-y-scroll">
                 <div className="pt-10 pb-16 px-8 sm:px-16">
                     <div className="text-center mx-auto">
-                        <button onClick={() => closeDrawer()} className="absolute top-0 right-0 m-8 text-2xl cursor-pointer">
-                            <FontAwesomeIcon icon={faTimes} className="" />
+                        <button onClick={() => closeDrawer()} className="absolute top-0 right-0 m-8 text-2xl">
+                            <FontAwesomeIcon icon={faTimes} />
                         </button>
                         {project.logo && (
                             <div className="block">
