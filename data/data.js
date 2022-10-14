@@ -87,7 +87,7 @@ export const myProjects = [
         shortDescription: "A 3-layer, relational database CRM with integrated to-do list management, custom lead follow-up processes, and the Tribunal project management system.", 
         specialNote: "",
         contributions: [
-            {id: 0, description: "Desgined the entire UI using Adobe XD"},
+            {id: 0, description: "Designed the entire UI using Adobe XD"},
             {id: 1, description: "Currently programming the front- and back-end"},
         ],
         releaseDate: "2022-10-04",
