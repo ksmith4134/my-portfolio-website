@@ -75,7 +75,7 @@ export const myProjects = [
     {
         id: 2, 
         entity: "Personal Project", 
-        entityLogo: "", 
+        entityLogo: "/logos/tribunal-logo-2.svg", 
         projectTitle: "CRM, Sales Manager", 
         type: "web app",
         skills: [
